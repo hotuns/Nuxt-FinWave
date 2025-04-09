@@ -132,6 +132,20 @@ const singIn = async () => {
 const registrationEnabled = configs.registration.enabled;
 const demoMode = configs.demoMode;
 
+const handleLogin = () => {
+    // 设置模拟的认证状态
+    useNuxtApp().$auth.state().authed.value = true;
+    // 设置模拟的用户信息
+    useNuxtApp().$auth.state().user.value = {
+        id: 1,
+        name: 'Demo User',
+        email: 'demo@example.com',
+        role: 'admin'
+    };
+    // 跳转到首页
+    navigateTo('/');
+};
+
 if (demoMode) {
   const {data, error} = await useApi('auth/demo', {
     method: "POST"

@@ -1,0 +1,7 @@
+{
+    "i18n-ally.localesPaths": [
+        "lang",
+        "components/modal/language"
+    ],
+    "i18n-ally.keystyle": "nested"
+}

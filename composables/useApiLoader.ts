@@ -91,131 +91,23 @@ export const useApiLoader = new class ApiLoader {
     }
 
     public async fetch() : Promise<boolean> {
-        const auth = Promise.all([this.userApi.init(), this.serverConfigs.init()]);
-
-        return Promise.all([
-            auth,
-            this.sessionsApi.init(),
-            this.serverApi.init(),
-            this.accountsApi.init(),
-            this.accountsFoldersApi.init(),
-            this.transactionsCategoriesApi.init(),
-            this.transactionsApi.init(),
-            this.recurringTransactionsApi.init(),
-            this.currenciesApi.init(),
-            this.exchangeRateApi.init(),
-            this.analyticsApi.init(),
-            this.notesApi.init(),
-            this.notificationsApi.init(),
-            this.accumulationsApi.init(),
-            this.categoriesBudgetApi.init(),
-            this.reportsApi.init(),
-            this.filesApi.init(),
-            this.adminApi.init(),
-            this.aiApi.init()
-        ]).then(results => {
-            if (results[0][0] === false) {
-                useNuxtApp().$auth.logout();
-
-                return false;
-            }
-
-            return results.map(r => typeof r == "boolean" ? r : true).find((v) => !v) === undefined;
-        }).then(r => {
-            if (r)
-                this.connectWebsocket();
-        }).catch(t => {
-            console.log(t);
-
-            return false;
-        });
+        // 初始化配置
+        await this.serverConfigs.init();
+        // 设置模拟配置
+        this.serverConfigs.setMockConfigs(new ServerConfigs());
+        
+        // 直接返回 true，模拟认证成功
+        return true;
     }
 
     public connectWebsocket() : void {
-        const auth = useNuxtApp().$auth.state();
-
-        this.websocketClient = new WebSocket(
-            useServer.getWebSocketUrl() + "websockets/events"
-        );
-
-        this.websocketClient.onmessage = (event) => {
-            if (event.data === "pong")
-                return
-
-            this.parseMessage(JSON.parse(event.data))
-        };
-
-        this.websocketClient.addEventListener("open", e =>{
-            this.websocketClient.send(JSON.stringify({
-                type: "auth",
-                body: {
-                    token: auth.token
-                }
-            }))
-
-            setInterval(() => {
-                this.websocketClient.send("ping")
-            },15000);
-
-            console.info("Websocket connected");
-        })
-
-        this.websocketClient.addEventListener("close", e =>{
-            setTimeout(() => {
-                console.warn("Websocket reconnect");
-                this.connectWebsocket();
-            },5000);
-        })
+        // 不需要实际的 WebSocket 连接
+        console.info("WebSocket connection disabled in demo mode");
     }
 
     protected parseMessage(message : any) {
-        if (message.type === "aiUpdate") {
-            this.aiApi.internalUpdate(message.body);
-
-            return;
-        }
-
-        if (message.type !== "update")
-            return;
-
-        const body = message.body;
-
-        switch (body.updated) {
-            case "accounts":
-                this.accountsApi.reloadAccounts();
-                break;
-            case "accountFolders":
-                this.accountsFoldersApi.fetch();
-                break;
-            case "accumulation":
-                this.accumulationsApi.fetchMap();
-                break;
-            case "currencies":
-                this.currenciesApi.fetch();
-                break;
-            case "notes":
-                this.notesApi.updateNotify();
-                break;
-            case "transactions":
-                this.accountsApi.reloadAccounts();
-                this.transactionsApi.updateNotify();
-                break;
-            case "reports":
-                this.reportsApi.updateNotify();
-                break;
-            case "recurringTransactions":
-                this.recurringTransactionsApi.fetch();
-                break;
-            case "categories":
-                this.transactionsCategoriesApi.fetch();
-                break;
-            case "categoryBudget":
-                this.categoriesBudgetApi.fetch();
-                break;
-            case "files":
-                this.filesApi.fetch();
-                break;
-        }
+        // 不需要处理实际的消息
+        console.info("Message parsing disabled in demo mode");
     }
 
     public getProvider() : any {

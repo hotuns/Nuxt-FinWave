@@ -44,6 +44,10 @@ export class ConfigManager {
         this.hash = hash.value;
     }
 
+    setMockConfigs(configs: ServerConfigs): void {
+        this._configs = configs;
+        this._serverAvailable = true;
+    }
 
     get configs(): ServerConfigs | null {
         return this._configs;

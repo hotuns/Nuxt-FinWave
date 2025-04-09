@@ -48,6 +48,11 @@ const config: NuxtConfig = {
 
         locales: [
             {
+                code: 'zh',
+                name: 'Chinese',
+                file: 'zh-CN.json'
+            },
+            {
                 code: 'en',
                 name: 'English',
                 file: 'en-US.json'

@@ -1,0 +1,817 @@
+{
+  "transactionsPage": {
+    "placeholders": {
+      "filters": {
+        "currencies": "按货币筛选",
+        "description": "按描述筛选",
+        "time": "按时间筛选",
+        "accounts": "按账户筛选",
+        "categories": "按类别筛选"
+      },
+      "recurring": "定期交易",
+      "accumulation": "已应用累积"
+    },
+    "table": {
+      "account": "账户",
+      "action": "操作",
+      "amount": "金额",
+      "category": "类别",
+      "createdAt": "创建时间",
+      "description": "描述"
+    },
+    "emptyMessage": "这里暂时是空的。点击'+'添加交易。"
+  },
+  "accountEntry": {
+    "messages": {
+      "deleteFailCause": {
+        "accumulation": "删除账户失败，因为某些累积设置影响了该账户",
+        "recurring": "删除账户失败，因为某些定期交易影响了该账户",
+        "transactions": "删除账户失败，因为某些交易影响了该账户",
+        "unknown": "删除账户失败"
+      },
+      "deleted": "账户已删除",
+      "hideFail": "隐藏账户失败",
+      "hided": "账户已隐藏",
+      "showFail": "恢复账户失败",
+      "showed": "账户已恢复"
+    }
+  },
+  "accountFolderEntry": {
+    "messages": {
+      "deleteFail": "删除账户文件夹失败",
+      "deleted": "账户文件夹已删除",
+      "edited": "账户文件夹已成功编辑"
+    }
+  },
+  "accountsPanel": {
+    "label": "账户",
+    "newAccount": "新建账户",
+    "newCategory": "新建类别",
+    "newFolder": "新建文件夹"
+  },
+  "analyticsPage": {
+    "byMonthsSwitcher": {
+      "area": "面积图",
+      "bar": "柱状图",
+      "radar": "雷达图"
+    },
+    "categories": {
+      "noData": "无数据",
+      "title": "按类别分析预算"
+    },
+    "expanse": "支出",
+    "income": "收入",
+    "pie": {
+      "month": {
+        "expensesTitle": "月度支出",
+        "incomesTitle": "月度收入"
+      },
+      "noData": "无数据",
+      "selects": {
+        "currency": "选择货币"
+      },
+      "year": {
+        "expensesTitle": "年度支出",
+        "incomesTitle": "年度收入"
+      }
+    }
+  },
+  "bulkPage": {
+    "buttons": {
+      "deleteAll": "删除全部",
+      "importCSV": "从CSV导入",
+      "newDefault": "默认交易",
+      "newInternal": "内部转账"
+    },
+    "messages": {
+      "error": "应用交易时出错",
+      "success": "所有交易已成功应用"
+    }
+  },
+  "categoriesPage": {
+    "categoriesSummary": {
+      "maxContribution": "最大贡献",
+      "noData": {
+        "expanse": "预算中没有支出数据",
+        "income": "预算中没有收入数据"
+      }
+    },
+    "emptyMessage": "这里暂时是空的。点击'+'添加类别。",
+    "path": "路径：",
+    "root": "根目录",
+    "table": {
+      "action": "操作",
+      "budget": {
+        "dateTypes": {
+          "perMonth": "每月",
+          "perQuartal": "每季度"
+        },
+        "title": "预算"
+      },
+      "categoryType": {
+        "expense": "支出",
+        "income": "收入",
+        "mixed": "混合",
+        "type": "类型"
+      },
+      "description": "描述",
+      "name": "名称",
+      "toChilds": "到子类别"
+    }
+  },
+  "currenciesPage": {
+    "table": {
+      "action": "操作",
+      "code": "代码",
+      "decimals": "小数位数",
+      "description": "描述",
+      "symbol": "符号"
+    }
+  },
+  "demo": {
+    "accountFolders": {
+      "1": {
+        "description": "传统金融账户",
+        "name": "传统"
+      },
+      "2": {
+        "description": "加密货币账户",
+        "name": "加密货币"
+      }
+    },
+    "accounts": {
+      "1": "Paypal",
+      "2": "现金",
+      "3": {
+        "description": "冷钱包",
+        "name": "Ledger"
+      },
+      "4": {
+        "description": "热钱包",
+        "name": "Binance"
+      }
+    },
+    "categories": {
+      "1": "工资",
+      "2": "投资",
+      "3": "日用品",
+      "4": "住房",
+      "5": "娱乐",
+      "6": "服装",
+      "7": "健康",
+      "8": "旅行"
+    },
+    "mainCurrencyCode": "USD"
+  },
+  "errorPage": {
+    "description": "无法连接到服务器。请查看控制台获取详细信息。",
+    "title": "服务器错误",
+    "tryAgain": "重试"
+  },
+  "loginPage": {
+    "actions": {
+      "singIn": "登录",
+      "singUp": "或注册"
+    },
+    "demoMessage": "这是FinWave演示模式。所有数据将在24小时后删除",
+    "errors": {
+      "demoError": "创建演示用户时出错！",
+      "invalidCredentials": "无效的凭据！",
+      "needPassword": "请输入密码！",
+      "needUsername": "请输入用户名！",
+      "serverError": "服务器错误"
+    },
+    "loginField": {
+      "label": "用户名",
+      "placeholder": "用户名"
+    },
+    "passwordField": {
+      "label": "密码",
+      "placeholder": "密码"
+    },
+    "rememberMe": "记住我",
+    "title": "登录"
+  },
+  "mainPage": {
+    "buttons": {
+      "newCategory": "新建类别",
+      "newCurrency": "新建货币",
+      "newNote": "新建笔记",
+      "newTransaction": "新建交易"
+    },
+    "categories": {
+      "emptyMessage": "当前月份的类别支出摘要将显示在这里"
+    },
+    "notes": {
+      "allNotesButton": "所有笔记",
+      "title": "笔记"
+    },
+    "summary": {
+      "emptyMessage": "账户摘要将显示在这里",
+      "preferredTip": "近似转换为您的首选货币"
+    },
+    "total": {
+      "onlyExpansesCheckbox": "仅支出"
+    }
+  },
+  "modals": {
+    "ai": {
+      "buttons": {
+        "send": "发送",
+        "start": "新会话"
+      },
+      "emptyTip": "问点什么！例如：\"查看最近几个月的分析。有什么建议吗？\"",
+      "messages": {
+        "uploadError": "上传文件错误"
+      },
+      "startText": "FinWave中嵌入的人工智能几乎可以完成任何任务：添加/编辑/删除交易、发票、笔记、预算等。当然，它还可以分析您的支出，为您提供最有用的建议。",
+      "title": "AI助手"
+    },
+    "buttons": {
+      "apply": "应用",
+      "back": "返回",
+      "cancel": "取消",
+      "close": "关闭",
+      "confirm": "确认",
+      "create": "创建",
+      "deny": "拒绝",
+      "set": "设置"
+    },
+    "categoryBudget": {
+      "messages": {
+        "edit": {
+          "error": "更新预算错误",
+          "success": "预算已更新"
+        },
+        "new": {
+          "error": "创建预算错误",
+          "success": "预算已创建"
+        },
+        "remove": {
+          "error": "删除预算错误",
+          "success": "预算已删除"
+        }
+      },
+      "placeholders": {
+        "dateType": {
+          "label": "周期性",
+          "perMonth": "每月",
+          "perQuartal": "每季度"
+        }
+      },
+      "title": "预期支出和收入"
+    },
+    "changePassword": {
+      "messages": {
+        "error": "更改密码错误",
+        "success": "密码已更改"
+      },
+      "placeholders": {
+        "newPassword": "新密码",
+        "newPasswordConfirm": "确认新密码"
+      },
+      "title": "更改密码",
+      "warning": "更改密码后，所有会话将被终止，您需要重新登录"
+    },
+    "confirmations": {
+      "deleteAccountFolder": "删除类别？",
+      "deleteAllBulk": "删除所有批量交易？此操作无法撤销",
+      "deleteNote": "删除笔记？",
+      "deleteRecurring": "删除自动化？",
+      "deleteTransaction": "删除交易？"
+    },
+    "csvImport": {
+      "columnsTypes": {
+        "account": "账户",
+        "amount": "金额",
+        "category": "类别",
+        "date": "日期",
+        "description": "描述",
+        "ignore": "忽略",
+        "toSelect": "选择类型"
+      },
+      "immediatelyApply": "立即应用所有交易",
+      "importMessage": "已导入{n}笔交易",
+      "placeholders": {
+        "description": "默认描述",
+        "ignoreFirst": "忽略{n}行",
+        "unrecognized": {
+          "account": "选择未识别的账户",
+          "amount": "选择未识别的金额",
+          "category": "选择未识别的类别",
+          "date": "选择未识别的日期"
+        }
+      },
+      "readLines": "已读取{n}行",
+      "steps": {
+        "columnsDefining": "定义列",
+        "fileSelect": "选择文件",
+        "unknownValuesDefinition": "定义未知值"
+      },
+      "title": "CSV导入",
+      "warning": "未映射的列将不会被保存。您也可以选择多个描述列进行合并"
+    },
+    "deleteNote": {
+      "messages": {
+        "error": "删除笔记错误",
+        "success": "笔记已删除"
+      }
+    },
+    "deleteRecurring": {
+      "messages": {
+        "error": "删除定期交易错误",
+        "success": "定期交易已删除"
+      }
+    },
+    "deleteTransaction": {
+      "messages": {
+        "error": "删除交易错误",
+        "success": "交易已删除"
+      }
+    },
+    "editAccount": {
+      "accumulation": "累积设置",
+      "messages": {
+        "error": "更新账户错误",
+        "success": "账户已更新"
+      },
+      "placeholders": {
+        "accountDescription": "账户描述",
+        "accountName": "账户名称",
+        "amount": "金额",
+        "folderSelect": "选择文件夹"
+      },
+      "tabs": {
+        "amount": "金额",
+        "general": "常规"
+      },
+      "title": "编辑账户"
+    },
+    "editAccountFolder": {
+      "messages": {
+        "error": "更新账户文件夹错误",
+        "success": "账户文件夹已更新"
+      },
+      "placeholders": {
+        "folderDescription": "文件夹描述",
+        "folderName": "文件夹名称"
+      },
+      "title": "编辑账户文件夹"
+    },
+    "editCurrency": {
+      "messages": {
+        "error": "更新货币错误",
+        "success": "货币已更新"
+      },
+      "placeholders": {
+        "currencyCode": "代码",
+        "currencyDecimals": "小数位数",
+        "currencyDescription": "描述",
+        "currencySymbol": "符号"
+      },
+      "title": "编辑货币"
+    },
+    "editLanguage": {
+      "placeholders": {
+        "language": "语言"
+      },
+      "title": "更改语言"
+    },
+    "editNote": {
+      "messages": {
+        "error": "更新笔记错误",
+        "success": "笔记已更新"
+      },
+      "placeholders": {
+        "noteNotificationTime": "提醒时间（可选）",
+        "noteText": "文本"
+      },
+      "title": "编辑笔记"
+    },
+    "editRecurring": {
+      "messages": {
+        "error": "更新定期交易错误",
+        "success": "定期交易已更新"
+      },
+      "notificationModes": {
+        "normal": "正常",
+        "silent": "静音",
+        "without": "无"
+      },
+      "placeholders": {
+        "recurringAccount": "账户",
+        "recurringAmount": "金额",
+        "recurringCategory": "类别",
+        "recurringDescription": "描述",
+        "recurringNextRepeat": "下次重复",
+        "recurringNotificationMode": "通知模式",
+        "recurringRepeatMode": "重复模式"
+      },
+      "repeatModes": {
+        "days": "每{n}天",
+        "months": "每{n}个月",
+        "weeks": "每{n}周"
+      },
+      "title": "编辑定期交易"
+    },
+    "editTransaction": {
+      "messages": {
+        "error": "编辑交易错误",
+        "success": "交易已编辑"
+      },
+      "placeholders": {
+        "transactionAccount": "账户",
+        "transactionAmount": "金额",
+        "transactionCategory": "类别",
+        "transactionDate": "日期",
+        "transactionDescription": "描述"
+      },
+      "tabs": {
+        "linked": "关联",
+        "main": "主要"
+      },
+      "title": "编辑交易"
+    },
+    "editTransactionCategory": {
+      "categoryWithoutParent": "无父类别",
+      "messages": {
+        "error": "更新交易类别错误",
+        "success": "交易类别已更新"
+      },
+      "placeholders": {
+        "categoryDescription": "描述",
+        "categoryExpectedAmount": "预期金额",
+        "categoryName": "名称",
+        "categoryParent": "父类别",
+        "categoryType": {
+          "expense": "支出",
+          "income": "收入",
+          "mixed": "混合",
+          "type": "类型"
+        }
+      },
+      "title": "编辑交易类别"
+    },
+    "files": {
+      "createdAt": "创建于：",
+      "deleteAll": "删除全部",
+      "empty": "存储中无文件",
+      "expiresAt": "过期于：",
+      "messages": {
+        "delete": {
+          "error": "删除文件错误",
+          "success": "文件已删除"
+        },
+        "deleteAll": {
+          "error": "删除文件错误",
+          "success": "文件已删除"
+        },
+        "linkCopy": {
+          "fail": "复制链接失败",
+          "success": "下载链接已复制"
+        }
+      },
+      "title": "文件"
+    },
+    "newAccount": {
+      "messages": {
+        "error": "创建账户错误",
+        "success": "账户已创建"
+      },
+      "placeholders": {
+        "accountDescription": "描述",
+        "accountName": "名称",
+        "currencySelect": "选择货币"
+      },
+      "title": "新建账户"
+    },
+    "newAccountFolder": {
+      "messages": {
+        "error": "创建账户文件夹错误",
+        "success": "账户文件夹已创建"
+      },
+      "placeholders": {
+        "folderDescription": "描述",
+        "folderName": "名称"
+      },
+      "title": "新建账户文件夹"
+    },
+    "newCurrency": {
+      "messages": {
+        "error": "创建货币错误",
+        "success": "货币已创建"
+      },
+      "placeholders": {
+        "currencyCode": "代码",
+        "currencyDecimals": "小数位数",
+        "currencyDescription": "描述",
+        "currencySymbol": "符号"
+      },
+      "title": "新建货币"
+    },
+    "newNote": {
+      "messages": {
+        "error": "创建笔记错误",
+        "success": "笔记已创建"
+      },
+      "placeholders": {
+        "noteNotificationTime": "提醒时间（可选）",
+        "noteText": "文本"
+      },
+      "title": "新建笔记"
+    },
+    "newRecurring": {
+      "messages": {
+        "error": "创建定期交易错误",
+        "success": "定期交易已创建"
+      },
+      "notificationModes": {
+        "normal": "正常",
+        "silent": "静音",
+        "without": "无"
+      },
+      "placeholders": {
+        "recurringAccount": "账户",
+        "recurringAmount": "金额",
+        "recurringCategory": "类别",
+        "recurringDescription": "描述",
+        "recurringNextRepeat": "下次重复",
+        "recurringNotificationMode": "通知模式",
+        "recurringRepeatMode": "重复模式"
+      },
+      "repeatModes": {
+        "days": "每{n}天",
+        "months": "每{n}个月",
+        "weeks": "每{n}周"
+      },
+      "title": "新建定期交易"
+    },
+    "newReport": {
+      "messages": {
+        "reportRequestFail": "请求报告错误",
+        "reportRequested": "报告已请求"
+      },
+      "placeholders": {
+        "description": "描述",
+        "filter": "筛选",
+        "type": "类型"
+      },
+      "title": "新建报告"
+    },
+    "newTransaction": {
+      "buttons": {
+        "bulkMode": "批量模式"
+      },
+      "messages": {
+        "error": "创建交易错误",
+        "success": "交易已创建"
+      },
+      "placeholders": {
+        "transactionAccount": "账户",
+        "transactionAmount": "金额",
+        "transactionCategory": "类别",
+        "transactionDate": "日期",
+        "transactionDescription": "描述"
+      },
+      "tabs": {
+        "default": "默认",
+        "internalTransfer": "内部转账"
+      },
+      "title": "新建交易"
+    },
+    "newTransactionCategory": {
+      "messages": {
+        "error": "创建交易类别错误",
+        "success": "交易类别已创建"
+      },
+      "placeholders": {
+        "categoryDescription": "描述",
+        "categoryName": "名称",
+        "categoryParent": "父类别",
+        "categoryType": {
+          "expense": "支出",
+          "income": "收入",
+          "mixed": "混合",
+          "type": "类型"
+        }
+      },
+      "title": "新建交易类别"
+    },
+    "notifications": {
+      "messages": {
+        "errorCreate": "创建通知点错误",
+        "errorDelete": "删除通知点错误",
+        "errorEdit": "更新通知点错误",
+        "errorPermissionGet": "新通知点需要通知权限",
+        "errorServiceWorker": "服务工作者不可用",
+        "errorSomething": "出错了",
+        "pointCreate": "通知点已创建",
+        "pointEdited": "通知点已更新",
+        "successDelete": "通知点已删除",
+        "testSent": "测试通知已发送"
+      },
+      "newPoint": "新通知点：",
+      "placeholders": {
+        "description": "描述"
+      },
+      "table": {
+        "actions": "操作",
+        "createdAt": "创建时间",
+        "description": "描述",
+        "primary": "主要",
+        "primaryValues": {
+          "false": "否",
+          "true": "是"
+        },
+        "type": "类型",
+        "types": {
+          "other": "其他",
+          "webPush": "Web推送"
+        }
+      },
+      "testNotificationText": "这是一个测试通知。一切正常！",
+      "title": "通知点"
+    },
+    "sessions": {
+      "badges": {
+        "current": "当前",
+        "limited": "受限"
+      },
+      "messages": {
+        "errorCopy": "复制令牌错误",
+        "errorCreate": "创建会话错误",
+        "errorDelete": "删除会话错误",
+        "successCopy": "令牌已复制",
+        "successCreate": "会话已创建",
+        "successDelete": "会话已删除"
+      },
+      "newSession": "新会话：",
+      "newToken": "新令牌已创建并复制到剪贴板：",
+      "placeholders": {
+        "description": "描述"
+      },
+      "table": {
+        "action": "操作",
+        "created": "创建时间",
+        "description": "描述",
+        "expires": "过期时间",
+        "meta": "元数据"
+      },
+      "title": "会话",
+      "warning": "会话允许您登录和使用第三方客户端。除非您知道令牌的用途，否则不要分享令牌！"
+    },
+    "setAccumulation": {
+      "messages": {
+        "deleted": "累积已删除",
+        "error": "设置累积错误",
+        "success": "累积已设置"
+      },
+      "placeholders": {
+        "category": "类别",
+        "stepEntry": {
+          "from": "从",
+          "step": "步长",
+          "to": "到"
+        },
+        "targetAccount": "目标账户"
+      },
+      "title": "设置累积"
+    }
+  },
+  "navigation": {
+    "analytics": "分析",
+    "categories": "类别",
+    "currencies": "货币",
+    "main": "主页",
+    "messages": {
+      "usernameCopied": "用户名已复制",
+      "usernameCopyFail": "复制用户名失败"
+    },
+    "notes": "笔记",
+    "recurring": "自动化",
+    "themes": {
+      "dark": "深色",
+      "light": "浅色",
+      "system": "系统"
+    },
+    "transactions": "交易",
+    "userButtons": {
+      "admin": "管理",
+      "ai": "AI助手",
+      "changePassword": "更改密码",
+      "language": "语言",
+      "logout": "退出",
+      "notifications": "通知",
+      "sessions": "会话",
+      "storage": "存储"
+    }
+  },
+  "notesPage": {
+    "emptyMessage": "这里暂时是空的。点击'+'添加笔记。",
+    "placeholders": {
+      "find": "按描述搜索"
+    }
+  },
+  "recurringPage": {
+    "emptyMessage": "这里暂时是空的。点击'+'添加定期交易。",
+    "table": {
+      "account": "账户",
+      "action": "操作",
+      "amount": "金额",
+      "category": "类别",
+      "description": "描述",
+      "lastRepeat": "上次重复",
+      "nextRepeat": "下次重复",
+      "notificationMode": "通知模式",
+      "repeatArg": "重复参数",
+      "repeatMode": "重复模式"
+    }
+  },
+  "registerPage": {
+    "actions": {
+      "singIn": "或登录",
+      "singUp": "注册"
+    },
+    "errors": {
+      "needPassword": "请输入密码！",
+      "needUsername": "请输入用户名！",
+      "password": {
+        "missingNumbers": "缺少数字！",
+        "missingSpecials": "缺少特殊字符！",
+        "tooLong": "太长！",
+        "tooShort": "太短！"
+      },
+      "serverError": "服务器错误",
+      "userExists": "用户名已被占用！"
+    },
+    "loginField": {
+      "label": "用户名",
+      "placeholder": "用户名"
+    },
+    "passwordField": {
+      "label": "密码",
+      "placeholder": "密码"
+    },
+    "title": "注册"
+  },
+  "reportsPanel": {
+    "backendLang": {
+      "account": "账户",
+      "category": "类别",
+      "created": "创建时间",
+      "currency": "货币",
+      "dateLocale": "zh-CN",
+      "delta": "金额",
+      "description": "描述",
+      "total": "总计"
+    },
+    "messages": {
+      "linkCopied": "下载链接已复制",
+      "linkFail": "复制链接失败"
+    },
+    "status": {
+      "available": "可用",
+      "failed": "失败",
+      "inProgress": "进行中"
+    },
+    "table": {
+      "action": "操作",
+      "created": "创建时间",
+      "description": "描述",
+      "expires": "过期时间",
+      "size": "大小",
+      "status": "状态",
+      "type": "类型"
+    },
+    "title": "报告",
+    "types": {
+      "byDays": "按天",
+      "byMonths": "按月",
+      "list": "列表"
+    }
+  },
+  "selects": {
+    "accountSelect": {
+      "placeholder": "账户"
+    },
+    "amountField": {
+      "placeholder": "金额"
+    },
+    "currencySelect": {
+      "placeholder": "货币"
+    },
+    "langSelect": {
+      "label": "语言"
+    },
+    "noOptions": "列表为空",
+    "noResults": "无结果",
+    "transactionCategorySelect": {
+      "new": "新建",
+      "placeholder": "类别",
+      "withoutParent": "无父类别"
+    }
+  },
+  "toasts": {
+    "hide": "隐藏"
+  }
+}
