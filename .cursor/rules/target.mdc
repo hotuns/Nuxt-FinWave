@@ -3,6 +3,3 @@ description:
 globs: 
 alwaysApply: true
 ---
-路亚记的代码放在 `./luyaji/apps/frontend` ，迁移跟路亚记相关的代码只在./luyaji 里面修改增加，不能影响当前FinWave的文件
-
-路亚记的页面风格要保持跟`finwave`一致

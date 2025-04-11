@@ -1,4 +1,4 @@
-import { NuxtConfig } from '@nuxt/types'
+import { type NuxtConfig } from '@nuxt/types'
 import {resolve} from "path";
 import {readFileSync} from "fs";
 
